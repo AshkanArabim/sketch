@@ -1,6 +1,6 @@
 function canvas(l) {
-  if (l > 100) {
-    console.warn("Length of canvas is more than 100");
+  if (!(0 <= l && l <= 100)) {
+    console.log("Length of canvas should be between 0 and 100");
     return;
   }
 
