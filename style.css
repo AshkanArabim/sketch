@@ -16,8 +16,9 @@ body {
   width: 900px;
   height: 900px;
   display: grid;
-  background-color: yellow;
+  background-color: beige;
   border: 1px solid black;
+  flex: 0 0 1;
 }
 
 .container div {
