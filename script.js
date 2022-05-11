@@ -59,7 +59,12 @@ function colorCanvas() {
   for (i = 1; i <= area; i++) {
     let pixel = document.createElement("div");
     pixel.addEventListener("mouseover", () => {
-      pixel.style.backgroundColor = randRGB();
+      if (pixel.style.backgroundColor) {
+        pixel.style.opacity -= 0.1;
+      } else {
+        pixel.style.backgroundColor = randRGB();
+        pixel.style.opacity = 1;
+      }
     });
     container.appendChild(pixel);
   }

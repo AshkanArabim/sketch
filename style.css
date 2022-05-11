@@ -16,7 +16,7 @@ body {
   width: 900px;
   height: 900px;
   display: grid;
-  background-color: beige;
+  background-color: black;
   border: 1px solid black;
   flex: 0 0 1;
 }
